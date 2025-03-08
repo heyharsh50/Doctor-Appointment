@@ -84,4 +84,5 @@ This project is **Open Source**. Feel free to use and improve it!
 ## 📧 Contact
 For queries, reach out at: **harshraj88253@gmail.com**
                            **samarpratap0629@gmail.com**
+                           **ys09559@gmail.com**
 

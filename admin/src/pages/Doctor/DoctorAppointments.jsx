@@ -37,9 +37,10 @@ const DoctorAppointments = () => {
               <img src={item.userData.image} className='w-8 rounded-full' alt="" /> <p>{item.userData.name}</p>
             </div>
             <div>
-              <p className='text-xs inline border border-primary px-2 rounded-full'>
-                {item.payment?'Online':'CASH'}
-              </p>
+            <p className={`text-xs inline border px-2 rounded-full 
+             ${item.payment ? 'border-green-500 text-green-500' : item.accepted ? 'border-red-500 text-red-500' : 'border-primary text-primary'}`}>
+             {item.payment ? 'Online' : item.accepted ? 'Not Paid' : 'CASH'}
+           </p>
             </div>
             <p className='max-sm:hidden'>{calculateAge(item.userData.dob)}</p>
             <p>{slotDateFormat(item.slotDate)}, {item.slotTime}</p>

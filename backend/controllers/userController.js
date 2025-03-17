@@ -254,6 +254,7 @@ const verifyRazorpay = async (req, res) => {
                 - Doctor: ${appointment.docData.name}
                 - Date: ${appointment.slotDate}
                 - Time: ${appointment.slotTime}
+                - Payment Reference: ${appointment._id} 
 
                 Thank you for booking with us!
             `;
